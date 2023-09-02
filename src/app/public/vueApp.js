@@ -8,5 +8,10 @@ const { createApp, ref } = Vue
         //message
         marcDataInput
       }
+    },
+    methods: {
+        copyDataToClipboard() {
+            console.log("This methods will add data to clip board when I add the web native clipboard API!")
+        }
     }
   }).mount('#app')

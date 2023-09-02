@@ -37,7 +37,8 @@
                 <div id="app">
                     
                     <!-- main page form -->
-                    <form action="" placeholder="Add raw marc records here...">
+                    <form onsubmit="return false;" 
+                    placeholder="Add raw marc records here...">
 
                         <!-- textarea used to enter marc data -->
                         <div class="mb-3">
@@ -50,11 +51,16 @@
                             <div id="marcDataInputlHelp" class="form-text">No data added to this form is stored in this application via cookie or related, also no intended cache of form data.</div>
                           </div>
 
-                        <div class="mb-3">
+                        <div class="mb-3 alert alert-success">
                             <h4>Marc input data parse preview:</h4>
                             {{ marcDataInput }}
                         </div>
 
+                        <p>Copy parsed Marc into JSON data to Clipboard</p>
+                        <button 
+                        class="btn btn-primary"
+                        v-on:click="copyDataToClipboard"
+                        >Copy data to Clipboard</button>
 
 
                     </form>
