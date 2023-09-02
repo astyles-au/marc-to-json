@@ -8,4 +8,5 @@ marc to json front end tooling that will convert standard marc21 files into a re
 ## dependencies:
 * Node JS https://nodejs.org/
 * EXPRESS JS https://expressjs.com/
+* BOOTSTRAP 5 https://getbootstrap.com/docs/5.0/getting-started/introduction/
 * VUE JS v3 https://vuejs.org/guide/introduction.html
