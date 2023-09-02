@@ -6,5 +6,6 @@ marc to json front end tooling that will convert standard marc21 files into a re
 * marc to JSON parse will have live preview
 
 ## dependencies:
-* Node JS
-* VUE JS v3
+* Node JS https://nodejs.org/
+* EXPRESS JS https://expressjs.com/
+* VUE JS v3 https://vuejs.org/guide/introduction.html
