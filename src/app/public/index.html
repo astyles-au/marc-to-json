@@ -34,8 +34,31 @@
             <article class="container-fluid">
 
                 <!-- Vue 3 app instance here -->
-                <!-- test instance to confirm virtual DOM load -->
-                <div id="app">{{ message }}</div>
+                <div id="app">
+                    
+                    <!-- main page form -->
+                    <form action="" placeholder="Add raw marc records here...">
+
+                        <!-- textarea used to enter marc data -->
+                        <div class="mb-3">
+                            <label for="marcDataInput" class="form-label">Marc data input:</label>
+                            <textarea 
+                            class="form-control" 
+                            aria-describedby="marcDataInputlHelp"
+                            v-model="marcDataInput"
+                            ></textarea>
+                            <div id="marcDataInputlHelp" class="form-text">No data added to this form is stored in this application via cookie or related, also no intended cache of form data.</div>
+                          </div>
+
+                        <div class="mb-3">
+                            <h4>Marc input data parse preview:</h4>
+                            {{ marcDataInput }}
+                        </div>
+
+
+
+                    </form>
+                </div>
 
             </article>
         </section>

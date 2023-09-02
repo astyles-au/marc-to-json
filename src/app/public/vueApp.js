@@ -2,9 +2,11 @@ const { createApp, ref } = Vue
 
   createApp({
     setup() {
-      const message = ref('Hello vue!')
+      //const message = ref('Hello vue!')
+      marcDataInput = ref('')
       return {
-        message
+        //message
+        marcDataInput
       }
     }
   }).mount('#app')
